@@ -35,7 +35,7 @@ int main()
 
     system("CLS");
 
-    while(choice != 5) {
+    while(choice != 4) {
         cout << "Matrix A:\n";
         printMatrix(matA);
         cout << "\nMatrix B:\n";
@@ -46,8 +46,7 @@ int main()
             << "1 - Addition\n"
             << "2 - Substraction\n"
             << "3 - Multiplication\n"
-            << "4 - Division\n"
-            << "5 - Quit\n\n"
+            << "4 - Quit\n\n"
             
             << "enter your choice: ";
 
@@ -83,14 +82,9 @@ int main()
             printMatrix(result);
             break;
 
-        case 4 :
-            division(matA, matB, result);
-            cout << "Division of Matrix A and Matrix B is:\n";
-            printMatrix(result);
-            break;
-
-        case 5 : 
-			cout << "Thank you for watching my project! :D\n";
+   
+        case 4 : 
+			cout << "Thank you for watching my OSS final project! :D\n";
             break;
 
         default :
@@ -177,16 +171,10 @@ void multiple(const matrix &mat1, const matrix &mat2, matrix &result)
 {
     for(int i = 0; i < M_SIZE; i++) {
         for(int j = 0; j < M_SIZE; j++) {
-            result[i][j] = mat1[i][j] * mat2[i][j];
+		for(int k=0; k< M_SIZE; k++){
+            result[i][j] += mat1[i][k] * mat2[k][j];
+		}
         }
     }
 }
 
-void division(const matrix &mat1, const matrix &mat2, matrix &result)
-{
-    for(int i = 0; i < M_SIZE; i++) {
-        for(int j = 0; j < M_SIZE; j++) {
-            result[i][j] = mat1[i][j] / mat2[i][j];
-        }
-    }
-}
