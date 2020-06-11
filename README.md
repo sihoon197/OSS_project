@@ -5,8 +5,7 @@ I operate simple matrix calculator service on raspberry pi.
 
 I take linear algebra class this semester. While I learning linear algebra, there are so many troublesome calculations are required. Therefore, I think I could use this chance to make my own matrix calcultor.
 
-I also utilize eigen library and source code will be uploaded soon.
-
+I also utilize eigen library.
 Eigen is a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms.
 
 # What does this project do?
