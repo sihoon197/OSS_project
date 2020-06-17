@@ -1,6 +1,5 @@
-presentation video download link: https://drive.google.com/open?id=1EQ5wLes2jAX4SEiTGOJb4DvU_9nPjahl
+presentation video link: https://www.youtube.com/watch?v=DGD-_VFOFmw&t=7s
 
-I got sound problem when upload on Youtube, so you can download through this link.
 
 # OSS_final_project
 This is final project for OSS class.
